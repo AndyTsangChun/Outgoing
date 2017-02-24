@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map_page" >
+    
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <ImageView
+        android:id="@+id/alert"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alert" />
+        
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/map_header" />
+
+    <include
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/bottom_bar"
+        android:background="#00000000" />
+   <RelativeLayout
+        android:id="@+id/infow_menu"
+        android:layout_width="60dp"
+        android:layout_height="250dp"
+        
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/infow_menu" >
+
+        <Button
+            android:id="@+id/infow_button_trace"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:background="@drawable/infow_button_trace"
+            android:onClick="btnHandler" />
+
+        <Button
+            android:id="@+id/infow_button_chat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/infow_button_chat"
+            android:onClick="btnHandler" />
+
+        <Button
+            android:id="@+id/infow_button_msg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/infow_button_chat"
+            android:layout_margin="5dp"
+            android:background="@drawable/infow_button_msg"
+            android:onClick="btnHandler" />
+
+        <Button
+            android:id="@+id/infow_button_details"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/infow_button_msg"
+            android:layout_margin="5dp"
+            android:background="@drawable/infow_button_details"
+            android:onClick="btnHandler" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

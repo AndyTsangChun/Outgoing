@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/infow_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infow_top"
+        android:layout_alignRight="@+id/infow_top"
+        android:layout_below="@+id/infow_top"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/infow_bg_bottom" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infow_top"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/infow_bg_top" >
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/infow_2_name_tv"
+                style="@style/info_window_tag"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/infow_2_desc_tv"
+                android:singleLine="true"
+                android:text="Marker Name" />
+
+            <TextView
+                android:id="@+id/infow_2_desc_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_alignLeft="@+id/infow_splitline"
+                android:layout_alignRight="@+id/infow_splitline"
+                android:layout_below="@+id/infow_splitline"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="#BBB"
+                android:maxLines="100"
+				android:scrollbars="vertical"
+                android:text="12.1351121111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222" />
+
+            <ImageView
+                android:id="@+id/infow_splitline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/infow_2_name_tv"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-6dp"
+                android:src="@drawable/infow_splitline" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/infow_bg_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infow_bottom"
+        android:layout_alignRight="@+id/infow_bottom"
+        android:layout_below="@+id/infow_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-11dp"
+        android:src="@drawable/infow_bg_frame" />
+
+</RelativeLayout>

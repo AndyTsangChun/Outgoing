@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tutorial_content_page" >
+
+    <ImageView
+        android:id="@+id/tut_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/landing_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/tut_replay_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:onClick="btnHandler"
+            android:visibility="gone"
+            android:background="@drawable/tut_replay_button"/>
+
+        <Button
+            android:id="@+id/tut_back_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:onClick="btnHandler"
+            android:visibility="gone"
+            android:background="@drawable/tut_back_button"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/infow_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infow_top"
+        android:layout_alignRight="@+id/infow_top"
+        android:layout_below="@+id/infow_top"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/infow_bg_bottom" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/infow_top"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/infow_bg_top" >
+
+        <ImageView
+            android:id="@+id/infow_user_pic"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/img_select" />
+
+        <RelativeLayout
+            android:id="@+id/info_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/infow_user_pic" >
+
+            <TextView
+                android:id="@+id/longitude_tag"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_below="@+id/latitude_tag"
+                android:layout_centerVertical="true"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:text="Long" />
+
+            <TextView
+                android:id="@+id/latitude_tag"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_below="@+id/id_tag"
+                android:singleLine="true"
+                android:text="Lag" />
+
+            <TextView
+                android:id="@+id/name_tv"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="UserName" />
+
+            <TextView
+                android:id="@+id/longitude_tv"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/latitude_tag"
+                android:layout_toRightOf="@+id/longitude_tag"
+                android:singleLine="true"
+                android:text="12.135112" />
+
+            <ImageView
+                android:id="@+id/infow_splitline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/name_tv"
+                android:layout_marginBottom="-6dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/infow_splitline" />
+
+            <ImageView
+                android:id="@+id/id_tag"
+                style="@style/info_window_tag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@+id/name_tv"
+                android:layout_below="@+id/infow_splitline"
+                android:singleLine="true"
+                android:src="@drawable/infow_icon_uid" />
+
+            <TextView
+                android:id="@+id/latitude_tv"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/latitude_tag"
+                android:layout_alignBottom="@+id/latitude_tag"
+                android:layout_toRightOf="@+id/longitude_tag"
+                android:singleLine="true"
+                android:text="59.135482" />
+
+            <TextView
+                android:id="@+id/id_tv"
+                style="@style/info_window_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_tv"
+                android:layout_toRightOf="@+id/longitude_tag"
+                android:singleLine="true"
+                android:text="Chan Tai Man" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/infow_bg_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infow_bottom"
+        android:layout_alignRight="@+id/infow_bottom"
+        android:layout_below="@+id/infow_bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-11dp"
+        android:src="@drawable/infow_bg_frame" />
+
+</RelativeLayout>

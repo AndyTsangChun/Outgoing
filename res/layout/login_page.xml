@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".Login_Page" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etxtUsername"
+            style="@style/txtField1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_modified_state"
+            android:hint="@string/username"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etxtPwd"
+            style="@style/txtField1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittext_modified_state2"
+            android:hint="@string/pwd"
+            android:password="true"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/remCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_toLeftOf="@+id/btnLogin"
+                android:text="@string/remT"
+                android:textColor="#585858"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_Button"
+        style="@style/button1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_margin="25dp"
+        android:onClick="btnHandler"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/register_Button"
+        style="@style/button1"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/login_Button"
+        android:layout_alignBottom="@+id/login_Button"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        android:onClick="btnHandler"
+        android:text="@string/register" />
+
+</RelativeLayout>

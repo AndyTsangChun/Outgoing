@@ -1,0 +1,111 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+        <style name="txtCaption1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#585858</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="txtCaption2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#31B404</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="txtContent1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#A4A4A4</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+    
+    <style name="button1">
+        <item name="android:background">@drawable/icon_button_green</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="txtField1">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+    
+    <style name="spinner1">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="listview">
+        <item name="android:textColor">#808080</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    
+    <style name="user_status_pop">
+        <item name="android:textColor">#888</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="user_status_pop2">
+        <item name="android:textColor">#666</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/edittext_modified_state</item>
+    </style>
+    
+    <style name="phone_button">
+        <item name="android:textColor">#444</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:onClick">btnHandler</item>
+        <item name="android:background">@drawable/phone_button_ani</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+    
+    <style name="info_window_tag">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+    
+    <style name="em_tag">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+    
+    <style name="em_et">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#BBB</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+</resources>

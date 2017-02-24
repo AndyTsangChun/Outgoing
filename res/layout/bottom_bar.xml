@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+                android:id="@+id/drawer_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/bottombar_layout"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/mbutton_close"
+                android:visibility="gone"
+                android:onClick="btnHandler" />
+    
+    <HorizontalScrollView
+        android:id="@+id/bottombar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/drawer_Button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:fadingEdgeLength="15.5sp"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:id="@+id/bottombar_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:orientation="horizontal" >
+            
+           <Button
+                android:id="@+id/user_status_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_user_status_ani"
+                android:onClick="btnHandler"/>
+           
+           <Button
+                android:id="@+id/auto_trace_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_auto_trace_ani"
+                android:onClick="btnHandler" />
+
+            <Button
+                android:id="@+id/search_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                 android:background="@drawable/mbutton_search_ani"
+                android:onClick="btnHandler"/>
+
+            <Button
+                android:id="@+id/msg_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_msg_ani"
+                android:onClick="btnHandler" />
+
+            <Button
+                android:id="@+id/chat_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_chat_ani"
+                android:onClick="btnHandler"/>
+
+            <Button
+                android:id="@+id/filter_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_filter_ani"
+                android:onClick="btnHandler" />
+            
+            <Button
+                android:id="@+id/sos_Button"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/mbutton_sos_ani"
+                android:onClick="btnHandler" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>

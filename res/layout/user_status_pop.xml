@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+    <ScrollView
+        android:id="@+id/us_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/user_status_pop_bg"
+        android:cacheColorHint="#00000000"
+        android:fadingEdgeLength="15.5sp"
+        android:overScrollMode="never"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/Event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp" >
+
+                <TextView
+                    android:id="@+id/EventNo_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EventNo: " />
+
+                <TextView
+                    android:id="@+id/EventNo_TB"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EventNo_TV"
+                    android:text="EventNo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Event"
+                android:layout_below="@+id/Event"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/UserNo_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserNo: " />
+
+                <TextView
+                    android:id="@+id/UserNo_TB"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/UserNo_TV"
+                    android:text="UserNo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Event"
+                android:layout_below="@+id/UserNo"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/UserName_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserName: " />
+
+                <EditText
+                    android:id="@+id/UserName_TB"
+                    style="@style/user_status_pop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/UserName_TV"
+                    android:hint="Fill in Name" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Event"
+                android:layout_below="@+id/UserName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/UserGender_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserGender: " />
+                
+                <RadioGroup
+				    android:id="@+id/gender_rbg"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_toRightOf="@+id/UserGender_TV"
+				    android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/male_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:text="M" />
+
+                <RadioButton
+                    android:id="@+id/female_rb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/male_rb"
+                    android:text="F" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Event"
+                android:layout_below="@+id/UserGender"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/UserPhone_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserPhone: " />
+
+                <EditText
+                    android:id="@+id/UserPhone_TB"
+                    style="@style/user_status_pop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/UserPhone_TV"
+                    android:hint="Fill in Phone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Event"
+                android:layout_below="@+id/UserPhone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/UserEmail_TV"
+                    style="@style/user_status_pop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UserEmail: " />
+
+                <EditText
+                    android:id="@+id/UserEmail_TB"
+                    style="@style/user_status_pop2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/UserEmail_TV"
+                    android:hint="Fill in Email" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/UserPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="15dp"
+                android:src="@drawable/img_select" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/UserEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:onClick="btnHandler"
+                android:background="@drawable/menubutton_bg2_ani"
+                android:text="Save"/>
+        </RelativeLayout>
+    </ScrollView>
+    
+	<Button
+        android:id="@+id/close_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-2dp"
+        android:onClick="btnHandler"
+        android:background="@drawable/close_button" />
+</RelativeLayout>

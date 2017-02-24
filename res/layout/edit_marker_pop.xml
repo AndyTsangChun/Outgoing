@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#888" >
+
+    <RelativeLayout
+        android:id="@+id/em_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp" >
+
+        <TextView
+            android:id="@+id/em_name_tag"
+            style="@style/em_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/em_name"/>"
+        
+        <EditText
+            android:id="@+id/em_name_et"
+            style="@style/em_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/em_name_tag"
+            android:ems="10"
+            android:hint="@string/em_name"
+            android:inputType="text"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+        
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/em_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/em_name"
+            android:layout_margin="8dp" >
+
+        <TextView
+            android:id="@+id/em_desc_tag"
+            style="@style/em_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/em_desc"/>
+        
+       <EditText
+           android:id="@+id/em_desc_et"
+           style="@style/em_et"
+           android:layout_width="wrap_content"
+           android:layout_height="150dp"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/em_desc_tag"
+           android:ems="10"
+           android:gravity="top"
+           android:hint="@string/em_desc"
+           android:inputType="textMultiLine" >
+
+        </EditText>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

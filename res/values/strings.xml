@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Outgoing</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login_page"></string>
+    <string name="username">Username</string>
+    <string name="pwd">Password </string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="remT">Remember Me</string>
+    <string name="title_activity_map_page"></string>
+    <string name="title_activity_setting_page"></string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="ass_point">Assembly Point</string>
+    <string name="station">Station</string>
+    <string name="em_name">Marker Name</string>
+    <string name="em_desc">Marker Description</string>
+    <string name="title_activity_msg_content_page"></string>
+    <string name="title_activity_msg_list_page"></string>
+    <string name="title_activity_view_event_page"></string>
+    <string name="title_activity_view_event_info_page"></string>
+    <string name="title_activity_chat_page"></string>
+    <string name="title_activity_add_marker_page"></string>
+    <string name="title_activity_tutorial_page">Tutorial_page</string>
+    <string name="title_activity_tutorial_content_page">Tutorial_content_page</string>
+
+</resources>

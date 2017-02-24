@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".ViewEvent_Page" >
+    
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+    
+    <ScrollView
+        android:id="@+id/event_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/header"
+        android:cacheColorHint="#00000000"
+        android:fadingEdgeLength="15.5sp"
+        android:overScrollMode="never"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/EventNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp" >
+
+                <TextView
+                    android:id="@+id/EventNo_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="EventNo: " />
+
+                <TextView
+                    android:id="@+id/EventNo_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EventNo_TV"
+                    style="@style/user_status_pop"
+                    android:text="EventNo" />
+            </RelativeLayout>
+   
+            <RelativeLayout
+                android:id="@+id/EventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EventNo"
+                android:layout_below="@+id/EventNo"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"  >
+
+                <TextView
+                    android:id="@+id/EventName_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="EventName: " />
+
+                <TextView
+                    android:id="@+id/EventName_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EventName_TV"
+                    style="@style/user_status_pop"
+                    android:hint="Fill in Name" />
+            </RelativeLayout>
+                     
+            <RelativeLayout
+                android:id="@+id/EventPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EventNo"
+                android:layout_below="@+id/EventName"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"  >
+
+                <TextView
+                    android:id="@+id/EventPlace_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="Event Place: " />
+
+                <TextView
+                    android:id="@+id/EventPlace_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EventPlace_TV"
+                    style="@style/user_status_pop"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/EventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EventNo"
+                android:layout_below="@+id/EventPlace"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"  >
+
+                <TextView
+                    android:id="@+id/EventDate_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="Event Date : "/>
+
+                <TextView
+                    android:id="@+id/EventDate_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/EventDate_TV"
+                    style="@style/user_status_pop"/>
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/TotalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EventNo"
+                android:layout_below="@+id/EventDate"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"  >
+
+                <TextView
+                    android:id="@+id/TotalNum_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="Total Number : " />
+
+                <TextView
+                    android:id="@+id/TotalNum_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/TotalNum_TV"
+                    style="@style/user_status_pop"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/EventDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/EventNo"
+                android:layout_below="@+id/TotalNum"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"  >
+
+                <TextView
+                    android:id="@+id/EventDesc_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/user_status_pop"
+                    android:text="Event Desc: " />
+
+                <TextView
+                    android:id="@+id/EventDesc_TB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100px"
+                    android:layout_toRightOf="@+id/EventDesc_TV"
+   					android:typeface="serif"
+                    style="@style/user_status_pop2"/>
+    		</RelativeLayout>
+        </RelativeLayout> 
+	</ScrollView>
+
+</RelativeLayout>

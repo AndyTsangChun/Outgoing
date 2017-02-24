@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#888" >
+
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"
+       android:layout_marginBottom="7dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="7dp"
+       android:layout_marginTop="7dp"
+       android:background="#BBB" >
+
+       <RelativeLayout
+           android:id="@+id/relativeLayout1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="10dp"
+           android:layout_toLeftOf="@+id/button1" >
+
+           <ImageView
+               android:id="@+id/search_phone_tag"
+               style="@style/info_window_tag"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_below="@+id/search_latitude_tag"
+               android:layout_centerVertical="true"
+               android:singleLine="true"
+               android:src="@drawable/search_icon_phone" />
+
+           <TextView
+               android:id="@+id/search_phone_tv"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/search_phone_tag"
+               android:layout_below="@+id/search_latitude_tag"
+               android:layout_toRightOf="@+id/search_event_tag"
+               android:singleLine="true"
+               android:text="99999999" />
+
+           <ImageView
+               android:id="@+id/search_email_tag"
+               style="@style/info_window_tag"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_below="@+id/search_phone_tag"
+               android:layout_centerVertical="true"
+               android:singleLine="true"
+               android:src="@drawable/search_icon_msg" />
+
+           <TextView
+               android:id="@+id/search_email_tv"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/search_email_tag"
+               android:layout_below="@+id/search_phone_tag"
+               android:layout_toRightOf="@+id/search_event_tag"
+               android:singleLine="true"
+               android:text="abc@123.com" />
+
+           <TextView
+               android:id="@+id/search_longitude_tag"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:singleLine="true"
+               android:text="Long" />
+
+           <TextView
+               android:id="@+id/search_event_tag"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/search_email_tag"
+               android:paddingRight="3dp"
+               android:singleLine="true"
+               android:text="Event" />
+
+           <TextView
+               android:id="@+id/search_event_tv"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/search_event_tag"
+               android:layout_below="@+id/search_email_tag"
+               android:layout_toRightOf="@+id/search_event_tag"
+               android:singleLine="true"
+               android:text="11.11111" />
+
+           <TextView
+               android:id="@+id/search_longitude_tv"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/search_longitude_tag"
+               android:layout_alignBottom="@+id/search_longitude_tag"
+               android:layout_toRightOf="@+id/search_event_tag"
+               android:singleLine="true"
+               android:text="22.22222" />
+
+           <TextView
+               android:id="@+id/search_latitude_tag"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/search_longitude_tv"
+               android:singleLine="true"
+               android:text="Lat" />
+
+           <TextView
+               android:id="@+id/search_latitude_tv"
+               style="@style/info_window_tag"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/search_latitude_tag"
+               android:layout_alignBottom="@+id/search_latitude_tag"
+               android:layout_toRightOf="@+id/search_event_tag"
+               android:singleLine="true"
+               android:text="11.11111" />
+       </RelativeLayout>
+
+       <Button
+           android:id="@+id/search_trace_button"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_margin="3dp"
+           android:onClick="btnHandler"
+           android:background="@drawable/search_button_trace_ani" />
+
+       <Button
+           android:id="@+id/search_phone_button"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/search_trace_button"
+           android:layout_margin="3dp"
+           android:onClick="btnHandler"
+           android:background="@drawable/search_button_chat_ani" />
+
+       <Button
+           android:id="@+id/search_msg_button"
+           android:layout_width="35dp"
+           android:layout_height="35dp"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/search_phone_button"
+           android:layout_margin="3dp"
+           android:onClick="btnHandler"
+           android:background="@drawable/search_button_msg_ani" />
+
+   </RelativeLayout>
+
+</RelativeLayout>
